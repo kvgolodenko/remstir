@@ -1,0 +1,18 @@
+#!/bin/bash
+
+### Set initial time of file
+FILEPATH=style.less
+LTIME=`stat -f %m *.less |sort -r|head -n 1`
+
+while true    
+do
+  ATIME=`stat -f %m *.less |sort -r|head -n 1`
+
+  if [[ "$ATIME" != "$LTIME" ]]
+  then
+      echo less files need to be rebuilt
+      lessc  --source-map style.less style.css --clean-css="--s1 --advanced --compatibility=ie8"
+      LTIME=$ATIME
+  fi
+  sleep 0.5 
+done

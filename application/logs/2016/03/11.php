@@ -1,0 +1,38 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2016-03-11 10:02:25 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: images ~ APPPATH/views/mobile/index.php [ 12 ] in /Users/kirill/workspace/apollon/web/application/views/mobile/index.php:12
+2016-03-11 10:02:25 --- DEBUG: #0 /Users/kirill/workspace/apollon/web/application/views/mobile/index.php(12): Kohana_Core::error_handler(8, 'Undefined varia...', '/Users/kirill/w...', 12, Array)
+#1 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(61): include('/Users/kirill/w...')
+#2 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(348): Kohana_View::capture('/Users/kirill/w...', Array)
+#3 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /Users/kirill/workspace/apollon/web/application/views/mobile/layout.php(162): Kohana_View->__toString()
+#5 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(61): include('/Users/kirill/w...')
+#6 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(348): Kohana_View::capture('/Users/kirill/w...', Array)
+#7 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /Users/kirill/workspace/apollon/web/modules/avo/classes/AVO/Controller.php(151): Kohana_Controller_Template->after()
+#9 /Users/kirill/workspace/apollon/web/application/classes/Controller/Abstract/Public.php(128): AVO_Controller->after()
+#10 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Controller.php(87): Controller_Abstract_Public->after()
+#11 [internal function]: Kohana_Controller->execute()
+#12 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Public))
+#13 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#14 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#15 /Users/kirill/workspace/apollon/web/htdocs/index.php(129): Kohana_Request->execute()
+#16 {main} in /Users/kirill/workspace/apollon/web/application/views/mobile/index.php:12
+2016-03-11 10:02:59 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: images ~ APPPATH/views/mobile/index.php [ 12 ] in /Users/kirill/workspace/apollon/web/application/views/mobile/index.php:12
+2016-03-11 10:02:59 --- DEBUG: #0 /Users/kirill/workspace/apollon/web/application/views/mobile/index.php(12): Kohana_Core::error_handler(8, 'Undefined varia...', '/Users/kirill/w...', 12, Array)
+#1 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(61): include('/Users/kirill/w...')
+#2 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(348): Kohana_View::capture('/Users/kirill/w...', Array)
+#3 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /Users/kirill/workspace/apollon/web/application/views/mobile/layout.php(162): Kohana_View->__toString()
+#5 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(61): include('/Users/kirill/w...')
+#6 /Users/kirill/workspace/apollon/web/system/classes/Kohana/View.php(348): Kohana_View::capture('/Users/kirill/w...', Array)
+#7 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /Users/kirill/workspace/apollon/web/modules/avo/classes/AVO/Controller.php(151): Kohana_Controller_Template->after()
+#9 /Users/kirill/workspace/apollon/web/application/classes/Controller/Abstract/Public.php(128): AVO_Controller->after()
+#10 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Controller.php(87): Controller_Abstract_Public->after()
+#11 [internal function]: Kohana_Controller->execute()
+#12 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Public))
+#13 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#14 /Users/kirill/workspace/apollon/web/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#15 /Users/kirill/workspace/apollon/web/htdocs/index.php(129): Kohana_Request->execute()
+#16 {main} in /Users/kirill/workspace/apollon/web/application/views/mobile/index.php:12

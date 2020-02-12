@@ -1,0 +1,1 @@
+<h2 class="tabels"><?php echo $result;?></h2>

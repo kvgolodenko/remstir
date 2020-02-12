@@ -1,0 +1,1 @@
+a:1:{i:0;a:5:{s:4:"kind";s:4:"char";s:8:"char_val";s:4:"jpeg";s:8:"text_val";N;s:7:"int_val";N;s:12:"datetime_val";N;}}

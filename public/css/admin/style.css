@@ -1,0 +1,94 @@
+header .navbar-inverse .navbar-inner {
+	background: #1b1b1b url(logo.png) 20px center no-repeat;
+	padding-left: 162px;
+    background-size: contain;
+}
+header .navbar .navbar-inner {
+	padding-left: 162px;
+}
+
+#Backend_Home_Teasers_Grid .toolbar,
+#Backend_Home_Teasers_Grid .delete-item,
+#Backend_About_Teasers_Grid .toolbar,
+#Backend_About_Teasers_Grid .delete-item {
+	display: none;
+	width: 0;
+}
+#Backend_Home_Teasers_Grid td:first-child,
+#Backend_About_Teasers_Grid td:first-child {
+	display: none;
+}
+#upload_form_cont {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 999999;
+	margin-left: -256px;
+	margin-top: -285px;
+}
+.info_box, #upload {
+	z-index: 1000000;
+}
+
+
+
+
+
+
+/*********** settings/emails *****************/
+#emails_layout  {
+	height: 100%;
+	width:100%;
+}
+
+#emails_layout td.tree {
+	vertical-align: top;
+	padding: 0 10px 10px 0;
+	border-right: 1px solid #a0a0a0;
+	width:280px;
+}
+
+#emails_layout td.content {
+	vertical-align: top;
+	padding: 0 0 10px 10px;
+}
+
+#emails_layout #tree_emails {
+	width: 280px;
+	min-height: 200px;
+	overflow: auto;
+}
+
+#emails_layout #tree_emails >ul >li >a { /* root items */
+	font-weight: bold;
+}
+
+#emails_layout .note {
+	width: 400px;
+}
+
+#emails_layout #form_container {
+	display:none;
+}
+
+#map_wrap, #map_wrap>#map {
+	width: 400px;
+	height: 300px;
+}
+
+
+/* Horizontal_Layout .fs_left special case for tags and categories */
+.fs_left .form_field_label {
+	padding-left: 5px !important;
+	text-align: left;
+}
+
+/* google maps fix START */
+.google_map img {
+ 		max-width: none;
+}
+.google_map label {
+	width: auto;
+	display: inline;
+}
+/* google maps fix END */
