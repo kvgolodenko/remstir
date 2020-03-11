@@ -157,13 +157,13 @@ Route::set('pdf', 'public/pdf(/<id>(/<uid>(/<filename>)))', array(
 		'action'		=> 'pdf',
 	));
 
-	
-Route::set('default', '(<action>(/<url_title>(/<third_param>)))', array('action' => '(album|item|news_article|news|gallery|sportbar|about|contact|gallery|trainers|category|subscribe|tabels|price|login|cabinet|signin|register|cabinet|signout)', 'url_title' => '.*?', 'third_param' => '.*?'))
+
+Route::set('default', '(<action>(/<url_title>(/<third_param>)))', array('action' => '(sendSms|album|item|news_article|news|gallery|sportbar|about|contact|gallery|trainers|category|subscribe|tabels|price|login|cabinet|signin|register|cabinet|signout)', 'url_title' => '.*?', 'third_param' => '.*?'))
 	->defaults(array(
 		'controller'	=> 'Public',
 		'action'		=> 'index',
 	));
-	
+
 Route::set('http404', 'http404')
 	->defaults(array(
 		'controller'=> 'Public',

@@ -350,4 +350,34 @@ class Controller_Public extends Controller_Abstract_Public
 			{
 				$this->set_view($this->module.'/errors/404');
 			}
+		public function action_sendSms()
+		{
+			try {
+					$phone = $this->request->post('phone');
+			    $client = new SoapClient('http://turbosms.in.ua/api/wsdl.html');
+
+			    $auth = [
+			        'login' => 'apollon_sumy',
+			        'password' => 'pjpekzREDFKF'
+			    ];
+
+			    $result = $client->Auth($auth);
+
+					$result = $client->GetCreditBalance();
+    			echo $result->GetCreditBalanceResult . PHP_EOL;
+
+			    $text = iconv('windows-1251', 'utf-8', $phone);
+
+ 			    $sms = [
+			        'sender' => 'ApollonSumy',
+			        'destination' => '+380633367733',
+			        'text' => $text
+			    ];
+			    $result = $client->SendSMS($sms);
+					echo $result->SendSMSResult->ResultArray[0] . PHP_EOL;
+			} catch(Exception $e) {
+			    echo 'Ошибка: ' . $e->getMessage() . PHP_EOL;
+			}
+			echo 'SMS sent';
+		}
 }
