@@ -11,7 +11,7 @@
 				</span>
 				<div class="social-top">
 					<a href="<?php echo $contact_insta_url;?>" target="_blank">
-						<img src="/img/instg.png" alt="">
+                        <?php echo HTML::image('/img/instg.png');?>
 						<p><?php echo (str_replace('https://instagram.com/','',$contact_insta_url))?></p>
 					</a>
 				</div>
