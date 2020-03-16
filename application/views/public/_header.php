@@ -1,5 +1,5 @@
 <header>
-	<div class="top-header">
+	<div class="top-header" style="background-image: url(<?php echo URL::site('img/iron_layer.jpg')?>)">
 		<div class="top-header-container">
 				<span>
 					<?php echo HTML::image('/img/address.svg');?>
