@@ -1,1 +1,0 @@
-a:1:{i:0;a:1:{s:61:"datetime_val <= DATE_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 DAY)";s:1:"1";}}

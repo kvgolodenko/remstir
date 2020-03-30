@@ -1,1 +1,1 @@
-a:1:{i:0;a:5:{s:4:"kind";s:4:"text";s:8:"char_val";N;s:8:"text_val";s:15:"(095) 575 15 71";s:7:"int_val";N;s:12:"datetime_val";N;}}
+a:1:{i:0;a:5:{s:4:"kind";s:4:"text";s:8:"char_val";N;s:8:"text_val";s:15:"(050) 307-56-31";s:7:"int_val";N;s:12:"datetime_val";N;}}

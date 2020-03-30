@@ -41,7 +41,7 @@
   background: #3C3D41;
 }
 .top-block {
-  height: 100vh;
+  height: 900px;
 }
 .top-block .fixed-image {
   width: 100%;
@@ -62,7 +62,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  background-position: center;
+  background-position: 51.5% 50%;
   background-size: cover;
 }
 .top-block .logo-image .message {
@@ -194,6 +194,7 @@
   margin: 50px;
   width: 80%;
   height: 80%;
+  padding: 40px 0;
 }
 .contacts .column .contacts-layer .contacts-text {
   font-size: 50px;
@@ -307,8 +308,9 @@ h1 {
   text-shadow: 2px 2px 2px grey;
 }
 h2 {
-  color: #E31E24;
   font-family: 'Sans', sans-serif;
+  margin: 10px 0;
+  color: black;
 }
 h3,
 h4,
@@ -2819,15 +2821,15 @@ body.bp-0 #container header .top-header .top-header-container span {
   display: block;
 }
 body.bp-0 #container header .top-header .top-header-container span img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline;
   position: absolute;
 }
 body.bp-0 #container main .top-block .logo-image {
   max-width: none;
   width: auto;
-  background-size: contain;
+  background-size: 153%;
   background-repeat: no-repeat;
 }
 body.bp-0 #container main .top-block .logo-image .message {
@@ -2844,6 +2846,8 @@ body.bp-0 #container header .top-header .top-header-container span a {
   padding: 0;
   margin: 0 0 0 40px;
   width: auto;
+  color: #fff;
+  font-size: 20px;
 }
 body.bp-0 #container header .top-header .top-header-container span p a,
 body.bp-0 #container header .top-header .top-header-container span a a {

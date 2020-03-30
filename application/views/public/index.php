@@ -52,9 +52,7 @@
                 <div class="contacts-layer">
                     <div class="contacts-text">
                         Контакты
-                        <br>
-                        050 307 56 31
-                        <br>
+                        <h2>050 307 56 31</h2>
                         Выезд по г. Сумы и области
                         <br>
                         Белопольский р-н
@@ -63,6 +61,7 @@
                         <br>
                         Без выходных
                     </div>
+                    <br>
                     <div class="social-top">
                         <a href="<?php echo $contact_insta_url;?>" target="_blank">
                             <img src="<?php echo URL::site('/img/instg.png')?>" alt="">
@@ -74,6 +73,3 @@
 
         </div>
     </main>
-
-
-
