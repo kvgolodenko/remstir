@@ -3,7 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" href="<?php echo URL::site('/favicon.ico'); ?>" type="image/x-icon">
-	<title><?php echo HTML::chars('Remont') ?></title>
+	<title><?php echo HTML::chars('Ремонт стиральных машин в Сумах') ?></title>
+	<meta property="og:title" content="Ремонт стиральных машин Сумы" />
+	<meta property="og:type" content="Ремонт стиральных машин в Сумах" />
+	<meta property="og:url" content="http://stiralka.sumy.ua" />
+	<meta property="og:image" content="<?php echo URL::site('img/logo_2.png');?>" />
+	<meta name="google-site-verification" content="f96c3KPGhEP2NdrYzNttq4ReBlDvj12MCANuIAP05hg" />
 	<meta <?php echo HTML::attributes(array('name' => 'description', 'content' => HTML::chars($seo_description))) ?>>
 	<meta <?php echo HTML::attributes(array('name' => 'keywords', 'content' => HTML::chars($seo_keywords))) ?>>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />

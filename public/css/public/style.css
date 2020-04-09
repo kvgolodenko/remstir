@@ -41,7 +41,7 @@
   background: #3C3D41;
 }
 .top-block {
-  height: 900px;
+  height: 100vh;
 }
 .top-block .fixed-image {
   width: 100%;
@@ -62,7 +62,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  background-position: 51.5% 50%;
+  background-position: center;
   background-size: cover;
 }
 .top-block .logo-image .message {
@@ -143,6 +143,20 @@
   color: white;
   font-size: 30px;
 }
+.option .additional-text {
+  display: none;
+  position: absolute;
+  color: white;
+  width: 80%;
+  text-align: left;
+  padding: 30px 0;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
+}
+.option .additional-text.show {
+  display: block;
+}
 .options .option.wash {
   background-image: url('/img/wash.png');
 }
@@ -194,7 +208,6 @@
   margin: 50px;
   width: 80%;
   height: 80%;
-  padding: 40px 0;
 }
 .contacts .column .contacts-layer .contacts-text {
   font-size: 50px;
@@ -308,9 +321,8 @@ h1 {
   text-shadow: 2px 2px 2px grey;
 }
 h2 {
+  color: #E31E24;
   font-family: 'Sans', sans-serif;
-  margin: 10px 0;
-  color: black;
 }
 h3,
 h4,
@@ -2801,13 +2813,32 @@ body.bp-0 #container header .top-header .top-header-container {
 }
 body.bp-0 .options {
   flex-direction: column;
+  height: auto;
 }
 body.bp-0 .options .option p {
   font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
 }
 body.bp-0 .options .option {
   width: 100%;
-  background-position: center;
+  background-position: top;
+  background-size: 200px;
+  height: 200px;
+  min-height: 200px;
+  position: relative;
+}
+body.bp-0 .options .option .additional-text {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 20px;
+}
+body.bp-0 .options .option.expanded {
+  height: auto;
+  background-position: top;
 }
 body.bp-0 .options .option.parts {
   margin-bottom: 200px;
@@ -2821,15 +2852,15 @@ body.bp-0 #container header .top-header .top-header-container span {
   display: block;
 }
 body.bp-0 #container header .top-header .top-header-container span img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   display: inline;
   position: absolute;
 }
 body.bp-0 #container main .top-block .logo-image {
   max-width: none;
   width: auto;
-  background-size: 153%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 body.bp-0 #container main .top-block .logo-image .message {
@@ -2846,8 +2877,6 @@ body.bp-0 #container header .top-header .top-header-container span a {
   padding: 0;
   margin: 0 0 0 40px;
   width: auto;
-  color: #fff;
-  font-size: 20px;
 }
 body.bp-0 #container header .top-header .top-header-container span p a,
 body.bp-0 #container header .top-header .top-header-container span a a {

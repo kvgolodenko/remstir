@@ -143,6 +143,20 @@
   color: white;
   font-size: 30px;
 }
+.option .additional-text {
+  display: none;
+  position: absolute;
+  color: white;
+  width: 80%;
+  text-align: left;
+  padding: 30px 0;
+  margin: 100px auto;
+  left: 0;
+  right: 0;
+}
+.option .additional-text.show{
+  display: block;
+}
 .options .option.wash {
   background-image: url('/img/wash.png');
 }
@@ -2799,13 +2813,32 @@ body.bp-0 #container header .top-header .top-header-container {
 }
 body.bp-0 .options{
   flex-direction: column;
+  height: auto;
 }
-body.bp-0 .options .option p{
+body.bp-0 .options .option p {
   font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
 }
 body.bp-0 .options .option{
   width: 100%;
-  background-position: center;
+  background-position: top;
+  background-size: 200px;
+  height: 200px;
+  min-height: 200px;
+  position: relative;
+}
+body.bp-0 .options .option .additional-text{
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 20px;
+}
+body.bp-0 .options .option.expanded {
+  height: auto;
+  background-position: top;
 }
 body.bp-0 .options .option.parts{
   margin-bottom: 200px;

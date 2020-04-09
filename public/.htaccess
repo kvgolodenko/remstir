@@ -336,8 +336,8 @@ FileETag None
   Options +FollowSymlinks
 # Options +SymLinksIfOwnerMatch
   RewriteEngine On
-#  RewriteBase /www.apollon.sumy.ua/
-#  RewriteBase /apollon
+#  RewriteBase /www.stiralka.sumy.ua/
+#  RewriteBase /stiralka
 </IfModule>
 
 
