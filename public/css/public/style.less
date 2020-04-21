@@ -42,6 +42,7 @@
 }
 .top-block {
   height: 100vh;
+  min-height: 700px;
 }
 .top-block .fixed-image {
   width: 100%;
@@ -138,6 +139,9 @@
   width: 320px;
   text-align: center;
   height: 400px;
+}
+.options .option:hover .additional-text {
+  display: block;
 }
 .options .option p {
   color: white;
@@ -2826,19 +2830,26 @@ body.bp-0 .options .option{
   width: 100%;
   background-position: top;
   background-size: 200px;
-  height: 200px;
+  height: auto;
   min-height: 200px;
   position: relative;
+}
+body.bp-0 .options .option:hover{
+  height: auto;
 }
 body.bp-0 .options .option .additional-text{
   position: static;
   width: auto;
-  margin: 0;
+  margin: 200px 0 0;
   padding: 20px;
 }
+body.bp-0 .options .option:hover .additional-text{
+  display: none;
+}
 body.bp-0 .options .option.expanded {
-  height: auto;
+  height: 400px;
   background-position: top;
+  transition: height .3s ease-out;
 }
 body.bp-0 .options .option.parts{
   margin-bottom: 200px;
@@ -2860,8 +2871,10 @@ body.bp-0 #container header .top-header .top-header-container span img {
 body.bp-0 #container main .top-block .logo-image {
   max-width: none;
   width: auto;
-  background-size: contain;
+  background-size: 570px;
   background-repeat: no-repeat;
+  background-position: 51.5%;
+
 }
 body.bp-0 #container main .top-block .logo-image .message{
   width: 200px;
@@ -2877,6 +2890,7 @@ body.bp-0 #container header .top-header .top-header-container span a {
   padding: 0;
   margin: 0 0 0 40px;
   width: auto;
+  color: #fff;
 }
 body.bp-0 #container header .top-header .top-header-container span p a,
 body.bp-0 #container header .top-header .top-header-container span a a {

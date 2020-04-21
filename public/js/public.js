@@ -32,18 +32,6 @@
         $('.form-layer').fadeOut(300);
         $('.form-layer form .telephone').val('');
       });
-      $(".option").on("mouseover", function (){
-        $(this).animate({"min-height":"450px"}, 300);
-        a = $(this);
-        setTimeout(function () {
-          a.children('.additional-text').toggleClass('show');
-          a.toggleClass('expanded');
-        }, 500);
-      }).on("mouseleave", function () {
-        $(this).animate({"min-height":"200px"}, 300);
-        $(this).removeClass('expanded');
-        $(this).children('.additional-text').removeClass('show');
-      })
 
     },
   };
